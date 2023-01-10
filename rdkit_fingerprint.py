@@ -88,7 +88,7 @@ class similarity_calculator():
 		# print("1575 element of dict: " + str(similarity_dict))
 		a=1
 		for i in range(len(smile_lib)):
-			# print(a)
+			print(a)
 			try:
 			    similarity_dict[smile_lib[i]] = self.tanimoto_calc(str(target_smile), str(smile_lib[i]))
 			except:
@@ -103,7 +103,7 @@ class similarity_calculator():
 			        rank_list.write(js)
 			        rank_list.write('\n')
 			    a += 1
-            
+
 
 a = similarity_calculator(smile_data_lib, target_molecule_smile, error_list, rank_list_name, number_output)
 
